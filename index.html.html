@@ -1,0 +1,679 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Teixeira de Paula & Vilela</title>
+<meta name="description" content="Teixeira de Paula & Vilela Advogados — Previdenciário, Trabalhista e Cível em Pouso Alegre-MG.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F8F3EF;--bg2:#F1E8E2;--card:#FFFFFF;--ink:#24090E;--mut:#6E5458;--line:rgba(80,20,30,.14);
+  --wine:#7A1222;--wine2:#5A0B18;--rose:#B2384B;--gold:#A9824A;--glow:rgba(122,18,34,.16);--on:#FFF6F4;
+  --shadow:0 30px 60px -30px rgba(70,10,20,.35);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12080A;--bg2:#1A0C10;--card:#1E0F13;--ink:#F6E9EA;--mut:#BFA3A7;--line:rgba(240,190,200,.14);
+  --wine:#C7364D;--wine2:#8E1A2C;--rose:#E98596;--gold:#D4B07A;--glow:rgba(199,54,77,.25);--on:#FFF6F4;
+  --shadow:0 30px 70px -30px rgba(0,0,0,.8);
+}}
+:root[data-theme="dark"]{
+  --bg:#12080A;--bg2:#1A0C10;--card:#1E0F13;--ink:#F6E9EA;--mut:#BFA3A7;--line:rgba(240,190,200,.14);
+  --wine:#C7364D;--wine2:#8E1A2C;--rose:#E98596;--gold:#D4B07A;--glow:rgba(199,54,77,.25);--on:#FFF6F4;
+  --shadow:0 30px 70px -30px rgba(0,0,0,.8);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 Manrope,system-ui,sans-serif;transition:background .5s,color .5s;-webkit-font-smoothing:antialiased}
+section,header,footer{overflow-x:clip}
+a{color:inherit}
+.S{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;letter-spacing:-.01em;line-height:1.02}
+.S i,.S em{font-style:italic;color:var(--wine)}
+.k{font:700 11px/1 Manrope,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--wine)}
+.wrap{width:min(1180px,100% - 40px);margin:0 auto}
+.btn{display:inline-flex;align-items:center;gap:10px;border:0;cursor:pointer;font:600 15px Manrope,sans-serif;padding:15px 24px;border-radius:999px;text-decoration:none;transition:transform .25s,box-shadow .25s,background .25s}
+.btn.p{background:var(--wine);color:var(--on);box-shadow:0 14px 30px -12px var(--wine)}
+.btn.p:hover{transform:translateY(-2px);box-shadow:0 20px 40px -14px var(--wine)}
+.btn.g{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn.g:hover{border-color:var(--wine);color:var(--wine)}
+.btn svg{width:18px;height:18px}
+
+/* ===== header: vertical rail on desktop + floating pill ===== */
+#nav{position:fixed;z-index:50;top:18px;left:50%;transform:translateX(-50%);width:min(1180px,100% - 24px);display:flex;align-items:center;gap:14px;padding:10px 10px 10px 18px;border-radius:20px;background:color-mix(in srgb,var(--bg) 72%,transparent);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);border:1px solid var(--line);transition:padding .3s,top .3s}
+#nav.sc{top:10px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.mark{width:40px;height:40px;border-radius:12px;background:var(--wine);display:grid;place-items:center;flex:none}
+.mark svg{width:26px;height:26px}
+.bt{line-height:1.1;min-width:0}
+.bt b{display:block;font:600 18px "Cormorant Garamond",serif;letter-spacing:.02em;white-space:nowrap}
+.bt span{font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--mut)}
+.links{display:flex;gap:4px;margin-left:auto;position:relative}
+.links a{font-size:14px;font-weight:500;text-decoration:none;padding:9px 14px;border-radius:12px;color:var(--mut);transition:color .2s;position:relative;z-index:1}
+.links a:hover,.links a.on{color:var(--ink)}
+#ink{position:absolute;z-index:0;top:0;height:100%;border-radius:12px;background:var(--bg2);transition:left .35s cubic-bezier(.2,.8,.2,1),width .35s cubic-bezier(.2,.8,.2,1),opacity .3s;opacity:0}
+#tgl{width:42px;height:42px;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;display:grid;place-items:center;flex:none}
+#tgl svg{width:19px;height:19px}
+#tgl .sun{display:none}
+:root[data-theme="dark"] #tgl .sun{display:block}:root[data-theme="dark"] #tgl .moon{display:none}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) #tgl .sun{display:block}:root:not([data-theme="light"]) #tgl .moon{display:none}}
+#nav .btn{padding:11px 18px;font-size:14px}
+#prog{position:absolute;left:18px;right:18px;bottom:-1px;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--wine),var(--gold));transform-origin:0 0;transform:scaleX(0)}
+@media(max-width:960px){.links{display:none}#nav .btn span{display:none}#nav .btn{padding:11px;margin-left:auto}}
+@media(max-width:420px){.bt span{display:none}.bt b{font-size:16px}}
+
+/* ===== hero ===== */
+#hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:130px 0 70px}
+#hero:before{content:"";position:absolute;inset:0;background:radial-gradient(50% 50% at 75% 40%,var(--glow),transparent 70%),radial-gradient(40% 40% at 0% 100%,color-mix(in srgb,var(--gold) 14%,transparent),transparent 70%);pointer-events:none}
+.hg{display:grid;grid-template-columns:1.05fr 1fr;gap:30px;align-items:center;position:relative}
+#hero h1{font-size:clamp(46px,6.4vw,92px);margin:22px 0 22px}
+#hero p.l{font-size:18px;color:var(--mut);max-width:520px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.stats{display:flex;gap:30px;margin-top:46px;flex-wrap:wrap}
+.stats div b{display:block;font:600 36px/1 "Cormorant Garamond",serif;color:var(--ink)}
+.stats div span{font-size:13px;color:var(--mut)}
+.stats .st{color:var(--gold);letter-spacing:2px;font-size:13px}
+.cv{position:relative;aspect-ratio:1/1;width:100%}
+#rings{position:absolute;inset:-8%;width:116%;height:116%}
+.badge{position:absolute;padding:12px 16px;border-radius:16px;background:color-mix(in srgb,var(--card) 82%,transparent);backdrop-filter:blur(10px);border:1px solid var(--line);box-shadow:var(--shadow);font-size:13px;display:flex;gap:10px;align-items:center;animation:fl 6s ease-in-out infinite}
+.badge i{width:30px;height:30px;border-radius:10px;background:var(--wine);color:var(--on);display:grid;place-items:center;font-style:normal;font-weight:700;font-size:13px}
+.badge b{display:block;font-size:13px}.badge small{color:var(--mut);font-size:11.5px}
+.b1{left:0;top:16%}.b2{right:0;bottom:16%;animation-delay:-3s}
+@keyframes fl{50%{transform:translateY(-10px)}}
+.scrolly{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--mut);display:flex;flex-direction:column;align-items:center;gap:8px}
+.scrolly:after{content:"";width:1px;height:38px;background:linear-gradient(var(--wine),transparent);animation:sd 2s infinite}
+@keyframes sd{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@media(max-width:900px){.hg{grid-template-columns:1fr}.cv{max-width:440px;margin:0 auto;order:-1;margin-top:-20px}#hero{padding-top:110px}.scrolly{display:none}.b1{left:-2%}.b2{right:-2%}}
+
+/* marquee */
+.mq{border-block:1px solid var(--line);padding:20px 0;overflow:hidden;white-space:nowrap;background:var(--bg2)}
+.mq div{display:inline-flex;gap:42px;animation:mq 38s linear infinite;padding-right:42px}
+.mq span{font:500 italic 26px "Cormorant Garamond",serif;color:var(--mut);display:inline-flex;align-items:center;gap:42px}
+.mq span:after{content:"";width:8px;height:8px;border-radius:50%;background:var(--wine)}
+@keyframes mq{to{transform:translateX(-100%)}}
+
+/* sections */
+.sec{padding:120px 0;position:relative}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:56px;flex-wrap:wrap}
+.sh h2{font-size:clamp(38px,5vw,66px);margin-top:14px;max-width:700px}
+.sh p{max-width:380px;color:var(--mut)}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* areas 3D cards */
+.ar{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;perspective:1400px}
+.ac{position:relative;border-radius:26px;padding:34px 30px 30px;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);transform-style:preserve-3d;transition:transform .18s ease-out;min-height:470px;display:flex;flex-direction:column}
+.ac>*{transform:translateZ(40px)}
+.ac .num{font:600 90px/1 "Cormorant Garamond",serif;color:transparent;-webkit-text-stroke:1px var(--line);position:absolute;right:24px;top:16px;transform:translateZ(10px)}
+.ac .ic{width:62px;height:62px;border-radius:18px;background:linear-gradient(140deg,var(--wine),var(--wine2));display:grid;place-items:center;transform:translateZ(70px);box-shadow:0 18px 30px -12px var(--wine)}
+.ac .ic svg{width:30px;height:30px;color:var(--on)}
+.ac h3{font-size:34px;margin:26px 0 10px}
+.ac p{color:var(--mut);font-size:15px}
+.ac ul{list-style:none;margin-top:auto;padding-top:22px;display:grid;gap:9px}
+.ac li{font-size:14px;display:flex;gap:10px;align-items:center;padding-top:9px;border-top:1px solid var(--line)}
+.ac li:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--wine);flex:none}
+.ac .shine{position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(400px circle at var(--mx,50%) var(--my,0%),color-mix(in srgb,var(--wine) 12%,transparent),transparent 50%);transform:none}
+@media(max-width:900px){.ar{grid-template-columns:1fr}.ac{min-height:0}}
+
+/* diagnostico */
+#diag{background:var(--bg2)}
+.dg{display:grid;grid-template-columns:.85fr 1.15fr;gap:46px;align-items:start}
+.dl h2{font-size:clamp(38px,5vw,62px);margin:14px 0 18px}
+.dl p{color:var(--mut)}
+.dl ul{list-style:none;margin-top:26px;display:grid;gap:12px}
+.dl li{display:flex;gap:12px;font-size:15px}
+.dl li b{width:26px;height:26px;border-radius:8px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;font-size:12px;color:var(--wine);flex:none}
+.box{background:var(--card);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:34px;position:relative;overflow:hidden;min-height:520px}
+.dtop{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;gap:14px}
+.ring{width:52px;height:52px;position:relative;flex:none}
+.ring svg{transform:rotate(-90deg)}
+.ring span{position:absolute;inset:0;display:grid;place-items:center;font-size:12px;font-weight:700}
+.dq{font:600 32px/1.1 "Cormorant Garamond",serif;margin-bottom:22px}
+.opts{display:grid;gap:10px}
+.op{text-align:left;font:500 15px Manrope,sans-serif;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:16px;padding:16px 18px;cursor:pointer;display:flex;align-items:center;gap:14px;transition:all .25s}
+.op:hover{border-color:var(--wine);transform:translateX(4px);background:color-mix(in srgb,var(--wine) 6%,transparent)}
+.op .e{width:36px;height:36px;border-radius:11px;background:var(--bg2);display:grid;place-items:center;flex:none}
+.op .e svg{width:19px;height:19px;color:var(--wine)}
+.stp{animation:si .5s cubic-bezier(.2,.8,.2,1)}
+@keyframes si{from{opacity:0;transform:translateX(30px) rotateY(-8deg)}}
+.back{background:none;border:0;color:var(--mut);font:500 13px Manrope,sans-serif;cursor:pointer;margin-top:18px}
+.res h4{font:600 34px/1.05 "Cormorant Garamond",serif;margin:14px 0 12px}
+.res .tag{display:inline-flex;gap:8px;align-items:center;font-size:12px;font-weight:700;padding:7px 12px;border-radius:999px;background:color-mix(in srgb,var(--wine) 12%,transparent);color:var(--wine)}
+.res .tag.u{background:var(--wine);color:var(--on)}
+.res p{color:var(--mut);font-size:15px}
+.res .cols{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}
+.res .cols div{border:1px solid var(--line);border-radius:18px;padding:18px}
+.res h5{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--wine);margin-bottom:10px}
+.res ul{list-style:none;display:grid;gap:7px;font-size:14px}
+.res li{display:flex;gap:8px}.res li:before{content:"—";color:var(--wine)}
+.fine{font-size:12px;color:var(--mut);margin-top:14px}
+@media(max-width:900px){.dg{grid-template-columns:1fr}.box{padding:24px;min-height:0}.res .cols{grid-template-columns:1fr}}
+
+/* simulador */
+.sim{display:grid;grid-template-columns:.9fr 1.1fr;gap:26px}
+.ctl{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:32px;box-shadow:var(--shadow)}
+.fld{margin-bottom:26px}
+.fld label{display:flex;justify-content:space-between;font-size:14px;font-weight:600;margin-bottom:12px}
+.fld label output{font:600 26px/1 "Cormorant Garamond",serif;color:var(--wine)}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:6px;background:linear-gradient(90deg,var(--wine) var(--p,50%),var(--bg2) var(--p,50%));outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:var(--card);border:6px solid var(--wine);cursor:grab;box-shadow:0 4px 12px var(--glow)}
+input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--card);border:6px solid var(--wine);cursor:grab}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:5px;border-radius:14px;background:var(--bg2)}
+.seg button{border:0;background:transparent;font:600 14px Manrope,sans-serif;color:var(--mut);padding:11px;border-radius:10px;cursor:pointer;transition:all .25s}
+.seg button[aria-pressed="true"]{background:var(--card);color:var(--wine);box-shadow:0 4px 14px -6px rgba(0,0,0,.25)}
+.out{display:grid;gap:14px;perspective:1200px}
+.rule{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px 24px;transition:transform .5s cubic-bezier(.2,.8,.2,1),border-color .3s;transform-style:preserve-3d}
+.rule.ok{border-color:var(--wine)}
+.rule.off{opacity:.45}
+.rh{display:flex;justify-content:space-between;gap:12px;align-items:start}
+.rh b{font-size:16px}.rh small{display:block;color:var(--mut);font-size:13px;margin-top:2px}
+.rh .when{text-align:right;font:600 24px/1 "Cormorant Garamond",serif;color:var(--wine);white-space:nowrap}
+.rh .when small{font:500 11px Manrope,sans-serif;color:var(--mut)}
+.bar{height:8px;border-radius:8px;background:var(--bg2);margin-top:16px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:8px;background:linear-gradient(90deg,var(--wine2),var(--wine),var(--gold));transition:width .8s cubic-bezier(.2,.8,.2,1)}
+.sfoot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:6px}
+@media(max-width:900px){.sim{grid-template-columns:1fr}.ctl{padding:24px}}
+
+/* processo: 3D stack */
+#proc{height:320vh;padding:0}
+.pin{position:sticky;top:0;height:100vh;display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+.pl h2{font-size:clamp(38px,5vw,64px);margin:14px 0 18px}
+.pl p{color:var(--mut);max-width:420px}
+.dots{display:flex;gap:8px;margin-top:30px}
+.dots i{width:28px;height:4px;border-radius:4px;background:var(--line);transition:background .3s,width .3s}
+.dots i.on{background:var(--wine);width:48px}
+.stack{position:relative;height:440px;perspective:1300px}
+.pc{position:absolute;inset:0;border-radius:30px;padding:40px;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);display:flex;flex-direction:column;transform-origin:50% 100%;will-change:transform,opacity}
+.pc .n{font:600 120px/1 "Cormorant Garamond",serif;color:var(--wine);opacity:.18;position:absolute;right:30px;top:20px}
+.pc .ic{width:58px;height:58px;border-radius:16px;background:var(--wine);display:grid;place-items:center}
+.pc .ic svg{width:28px;height:28px;color:var(--on)}
+.pc h3{font-size:40px;margin:auto 0 12px}
+.pc p{color:var(--mut);max-width:440px}
+@media(max-width:900px){#proc{height:auto;padding:100px 0}.pin{position:static;height:auto;grid-template-columns:1fr}.stack{height:auto;display:grid;gap:16px;perspective:none}.pc{position:relative;inset:auto;min-height:260px;transform:none!important;opacity:1!important;padding:28px}.pc h3{font-size:32px;margin-top:40px}}
+
+/* equipe */
+.eq{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px}
+.pf{border-radius:26px;background:var(--card);border:1px solid var(--line);padding:30px;box-shadow:var(--shadow)}
+.av{width:100%;aspect-ratio:4/3.2;border-radius:18px;background:linear-gradient(150deg,var(--wine),var(--wine2));display:grid;place-items:center;position:relative;overflow:hidden;margin-bottom:22px}
+.av span{font:italic 600 92px/1 "Cormorant Garamond",serif;color:var(--on);opacity:.9}
+.av:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,transparent 0 18px,rgba(255,255,255,.04) 18px 19px)}
+.pf h3{font-size:30px}
+.pf small{color:var(--wine);font-weight:600;font-size:13px}
+.pf p{color:var(--mut);font-size:14.5px;margin-top:12px}
+.gg{border-radius:26px;padding:30px;background:var(--wine);color:var(--on);display:flex;flex-direction:column;position:relative;overflow:hidden}
+.gg:before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;border:1px solid rgba(255,255,255,.15);right:-120px;top:-120px;box-shadow:0 0 0 40px rgba(255,255,255,.03),0 0 0 80px rgba(255,255,255,.03)}
+.gg .big{font:600 110px/1 "Cormorant Garamond",serif;margin-top:auto}
+.gg .stars{letter-spacing:4px;font-size:18px;color:#F2D29B}
+.gg p{opacity:.85;font-size:14.5px;margin:8px 0 22px}
+.gg a{align-self:start;color:var(--on);font-weight:600;font-size:14px;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.4)}
+@media(max-width:900px){.eq{grid-template-columns:1fr}.gg .big{font-size:84px}}
+
+/* faq */
+.fq{max-width:860px}
+.fi{border-bottom:1px solid var(--line)}
+.fi button{width:100%;text-align:left;background:none;border:0;color:var(--ink);font:600 24px/1.2 "Cormorant Garamond",serif;padding:24px 50px 24px 0;cursor:pointer;position:relative}
+.fi button:after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font:300 30px Manrope,sans-serif;color:var(--wine);transition:transform .3s}
+.fi.o button:after{transform:translateY(-50%) rotate(45deg)}
+.fi .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s}
+.fi.o .a{grid-template-rows:1fr}
+.fi .a>div{overflow:hidden;color:var(--mut)}
+.fi .a p{padding-bottom:24px}
+
+/* contato */
+.ct{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
+.cbig{border-radius:30px;padding:46px;background:linear-gradient(150deg,var(--wine),var(--wine2));color:var(--on);position:relative;overflow:hidden}
+.cbig h2{font-size:clamp(40px,5vw,68px)}
+.cbig h2 i{color:#F2D29B}
+.cbig p{opacity:.85;margin:18px 0 30px;max-width:440px}
+.cbig .btn{background:var(--on);color:var(--wine2)}
+#mini{position:absolute;right:-60px;bottom:-60px;width:320px;height:320px;opacity:.55;pointer-events:none}
+.cl{display:grid;gap:14px}
+.ci{border-radius:22px;padding:24px;background:var(--card);border:1px solid var(--line);display:flex;gap:16px;align-items:start;text-decoration:none;transition:border-color .25s,transform .25s}
+a.ci:hover{border-color:var(--wine);transform:translateY(-3px)}
+.ci .e{width:46px;height:46px;border-radius:14px;background:var(--bg2);display:grid;place-items:center;flex:none}
+.ci .e svg{width:22px;height:22px;color:var(--wine)}
+.ci small{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+.ci b{font-size:16px;font-weight:600}
+@media(max-width:900px){.ct{grid-template-columns:1fr}.cbig{padding:32px}}
+
+footer{padding:50px 0 110px;border-top:1px solid var(--line);margin-top:120px}
+.ft{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--mut)}
+.ft b{color:var(--ink)}
+
+#wa{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#1FAF5A;color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(31,175,90,.6);transition:transform .25s}
+#wa:hover{transform:scale(1.08)}
+#wa svg{width:30px;height:30px}
+#wa:before{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid #1FAF5A;animation:pu 2.4s infinite}
+@keyframes pu{to{transform:scale(1.6);opacity:0}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header id="nav">
+  <a class="brand" href="#top" aria-label="Início">
+    <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#FFF6F4" stroke-width="1.4"><circle cx="12" cy="8.6" r="4.6"/><circle cx="8.4" cy="14.8" r="4.6"/><circle cx="15.6" cy="14.8" r="4.6"/></svg></span>
+    <span class="bt"><b>Teixeira de Paula & Vilela</b><span>Advogados</span></span>
+  </a>
+  <nav class="links" id="links">
+    <span id="ink"></span>
+    <a href="#areas">Atuação</a><a href="#diag">Diagnóstico</a><a href="#simulador">Aposentadoria</a><a href="#equipe">Escritório</a><a href="#contato">Contato</a>
+  </nav>
+  <button id="tgl" aria-label="Alternar tema claro e escuro">
+    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  </button>
+  <a class="btn p" data-wa="Olá! Vim pelo site e gostaria de falar com o escritório." href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg><span>Falar agora</span></a>
+  <i id="prog"></i>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="hero">
+  <div class="wrap hg" id="top">
+    <div>
+      <div class="k rv">Previdenciário · Trabalhista · Cível — Pouso Alegre/MG</div>
+      <h1 class="S rv">Seus direitos,<br>com o <i>caminho</i><br><i>claro.</i></h1>
+      <p class="l rv">Do pedido no INSS à ação trabalhista, você entende cada etapa do seu caso — em linguagem simples, com quem atua nisso há mais de 15 anos.</p>
+      <div class="cta rv">
+        <a class="btn p" href="#diag">Fazer meu diagnóstico <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn g" href="#simulador">Simular aposentadoria</a>
+      </div>
+      <div class="stats rv">
+        <div><b>5,0</b><span class="st">★★★★★</span><br><span>36 avaliações no Google</span></div>
+        <div><b>+15</b><span>anos em direito<br>previdenciário</span></div>
+        <div><b>3</b><span>áreas de atuação<br>integradas</span></div>
+      </div>
+    </div>
+    <div class="cv rv">
+      <canvas id="rings" aria-hidden="true"></canvas>
+      <div class="badge b1"><i>INSS</i><div><b>Pedido e recurso</b><small>administrativo e judicial</small></div></div>
+      <div class="badge b2"><i>CLT</i><div><b>Direitos na rescisão</b><small>conferência completa</small></div></div>
+    </div>
+  </div>
+  <div class="scrolly">Role</div>
+</section>
+
+<div class="mq" aria-hidden="true"><div id="mqd">
+  <span>Aposentadoria</span><span>BPC / LOAS</span><span>Auxílio por incapacidade</span><span>Pensão por morte</span><span>Revisão de benefício</span><span>Verbas rescisórias</span><span>Horas extras</span><span>Contratos</span><span>Direito do consumidor</span>
+</div></div>
+
+<!-- ============ ÁREAS ============ -->
+<section class="sec" id="areas">
+  <div class="wrap">
+    <div class="sh">
+      <div><div class="k rv">Áreas de atuação</div><h2 class="S rv">Três frentes. <i>Um mesmo cuidado.</i></h2></div>
+      <p class="rv">Muitos casos começam numa área e continuam em outra — uma demissão que vira pedido de benefício, um acidente que vira indenização. Aqui, tudo é visto junto.</p>
+    </div>
+    <div class="ar">
+      <article class="ac tilt rv"><i class="shine"></i><span class="num">01</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4 7v5c0 4.5 3.3 8.2 8 9 4.7-.8 8-4.5 8-9V7l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3 class="S">Previdenciário</h3>
+        <p>Planejamento e pedido de benefícios no INSS, recursos e ações quando o pedido é negado ou cortado.</p>
+        <ul><li>Aposentadorias (idade, tempo, especial, rural)</li><li>Auxílio por incapacidade e invalidez</li><li>BPC/LOAS</li><li>Pensão por morte</li><li>Revisão de benefícios</li></ul>
+      </article>
+      <article class="ac tilt rv"><i class="shine"></i><span class="num">02</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></div>
+        <h3 class="S">Trabalhista</h3>
+        <p>Conferência de rescisão, cálculo de verbas e defesa de quem trabalha — com prazos cuidados de perto.</p>
+        <ul><li>Verbas rescisórias e FGTS</li><li>Horas extras e adicionais</li><li>Vínculo sem carteira assinada</li><li>Acidente e doença do trabalho</li><li>Assédio e rescisão indireta</li></ul>
+      </article>
+      <article class="ac tilt rv"><i class="shine"></i><span class="num">03</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M5 7h14M5 7l-3 7a3 3 0 0 0 6 0L5 7Zm14 0-3 7a3 3 0 0 0 6 0l-3-7ZM8 21h8"/></svg></div>
+        <h3 class="S">Cível</h3>
+        <p>Contratos, cobranças, consumo e indenizações — resolvendo de forma negociada sempre que possível.</p>
+        <ul><li>Direito do consumidor</li><li>Contratos e cobranças</li><li>Indenizações</li><li>Negociação e acordos</li><li>Orientação preventiva</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIAGNÓSTICO ============ -->
+<section class="sec" id="diag">
+  <div class="wrap dg">
+    <div class="dl">
+      <div class="k rv">Diagnóstico em 1 minuto</div>
+      <h2 class="S rv">Qual é a <i>sua situação</i> hoje?</h2>
+      <p class="rv">Responda 3 perguntas rápidas e veja quais pontos costumam ser analisados em casos como o seu, os documentos para separar e se existe algum prazo correndo.</p>
+      <ul class="rv">
+        <li><b>1</b>Escolha o que está acontecendo</li>
+        <li><b>2</b>Responda duas perguntas objetivas</li>
+        <li><b>3</b>Receba o resumo e envie ao escritório pelo WhatsApp</li>
+      </ul>
+    </div>
+    <div class="box rv" id="dbox"></div>
+  </div>
+</section>
+
+<!-- ============ SIMULADOR ============ -->
+<section class="sec" id="simulador">
+  <div class="wrap">
+    <div class="sh">
+      <div><div class="k rv">Simulador de aposentadoria</div><h2 class="S rv">Quando você <i>pode se aposentar?</i></h2></div>
+      <p class="rv">Arraste os controles. O simulador compara sua situação com as principais regras após a Reforma da Previdência e estima o ano em que cada uma seria cumprida.</p>
+    </div>
+    <div class="sim">
+      <div class="ctl rv">
+        <div class="fld"><label>Sexo</label><div class="seg" id="sx"><button aria-pressed="true" data-v="F">Mulher</button><button aria-pressed="false" data-v="M">Homem</button></div></div>
+        <div class="fld"><label for="ag">Idade hoje <output id="agO">54 anos</output></label><input type="range" id="ag" min="18" max="75" value="54"></div>
+        <div class="fld"><label for="ct">Tempo de contribuição <output id="ctO">26 anos</output></label><input type="range" id="ct" min="0" max="45" value="26"></div>
+        <div class="fld" style="margin-bottom:0"><label>Contribuía antes de 13/11/2019?</label><div class="seg" id="bf"><button aria-pressed="true" data-v="1">Sim</button><button aria-pressed="false" data-v="0">Não</button></div></div>
+      </div>
+      <div class="out" id="out"></div>
+    </div>
+    <div class="sfoot rv" style="margin-top:22px">
+      <p class="fine" style="max-width:640px">Estimativa simplificada, considerando contribuição contínua a partir de hoje. Não inclui pedágios, tempo especial, rural ou de professor(a), nem o valor do benefício — esses pontos podem antecipar sua aposentadoria e só aparecem na análise do seu CNIS.</p>
+      <a class="btn p" id="simWa" href="#">Quero a análise do meu CNIS</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESSO ============ -->
+<section class="sec" id="proc">
+  <div class="wrap pin">
+    <div class="pl">
+      <div class="k">Como trabalhamos</div>
+      <h2 class="S">Do primeiro contato <i>à decisão final.</i></h2>
+      <p>Você sabe em que etapa o seu caso está — e o que vem depois. Sem juridiquês e sem ligações desnecessárias.</p>
+      <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="stack" id="stack">
+      <div class="pc"><span class="n">01</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></div><h3 class="S">Escuta</h3><p>Você conta o que aconteceu — pelo WhatsApp ou no escritório. Entendemos a história completa antes de qualquer conclusão.</p></div>
+      <div class="pc"><span class="n">02</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></div><h3 class="S">Análise</h3><p>Conferimos documentos, CNIS, contratos e prazos. Você recebe uma explicação clara das possibilidades reais do seu caso.</p></div>
+      <div class="pc"><span class="n">03</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div><h3 class="S">Estratégia</h3><p>Definimos o melhor caminho: pedido administrativo, acordo ou ação judicial — sempre com custos e etapas combinados antes.</p></div>
+      <div class="pc"><span class="n">04</span><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6 9 17l-5-5"/></svg></div><h3 class="S">Acompanhamento</h3><p>Atuamos no INSS e na Justiça, em todas as instâncias. Você é avisado(a) quando algo realmente importa.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EQUIPE ============ -->
+<section class="sec" id="equipe">
+  <div class="wrap">
+    <div class="sh">
+      <div><div class="k rv">O escritório</div><h2 class="S rv">Proximidade de quem <i>atende de perto.</i></h2></div>
+      <p class="rv">Escritório em Pouso Alegre, com atendimento a clientes de toda a região do Sul de Minas e de outros estados.</p>
+    </div>
+    <div class="eq">
+      <div class="pf rv"><div class="av"><span>DT</span></div><small>Sócio</small><h3 class="S">Dr. Daniel Teixeira</h3><p>Atuação técnica e próxima em causas trabalhistas e previdenciárias, com foco em explicar cada passo ao cliente.</p></div>
+      <div class="pf rv"><div class="av"><span>SV</span></div><small>Sócio</small><h3 class="S">Dr. Sebastião H. Vilela</h3><p>Mais de 15 anos em direito previdenciário: benefícios, revisões e atuação junto ao INSS e aos tribunais.</p></div>
+      <div class="gg rv"><div class="stars">★★★★★</div><div class="big">5,0</div><p>Nota máxima em 36 avaliações de clientes no Google.</p><a id="gLink" href="#" target="_blank" rel="noopener">Ver avaliações no Google →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh"><div><div class="k rv">Dúvidas frequentes</div><h2 class="S rv">Antes de <i>falar com a gente.</i></h2></div></div>
+    <div class="fq" id="fq">
+      <div class="fi rv"><button>O INSS negou meu benefício. Ainda dá para fazer algo?</button><div class="a"><div><p>Sim. Existe o recurso administrativo, com prazo de 30 dias a partir da ciência da decisão, e também a via judicial. O motivo do indeferimento indica qual caminho faz mais sentido.</p></div></div></div>
+      <div class="fi rv"><button>Quanto tempo tenho para entrar com ação trabalhista?</button><div class="a"><div><p>Em regra, até 2 anos após o fim do contrato, podendo cobrar direitos dos últimos 5 anos. Por isso vale conferir a rescisão o quanto antes.</p></div></div></div>
+      <div class="fi rv"><button>Preciso ir até o escritório?</button><div class="a"><div><p>Não necessariamente. O primeiro contato e o envio de documentos podem ser feitos pelo WhatsApp, e o atendimento presencial fica em Pouso Alegre.</p></div></div></div>
+      <div class="fi rv"><button>Quais documentos levo no primeiro atendimento?</button><div class="a"><div><p>Documento com foto, CPF, comprovante de residência e o que tiver do caso: carteira de trabalho, extrato do CNIS, carta do INSS, laudos, contrato ou termo de rescisão.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO ============ -->
+<section class="sec" id="contato" style="padding-top:0">
+  <div class="wrap ct">
+    <div class="cbig rv">
+      <canvas id="mini" aria-hidden="true"></canvas>
+      <div class="k" style="color:#F2D29B">Fale com o escritório</div>
+      <h2 class="S" style="margin-top:14px">Conte o seu caso.<br><i>A gente explica.</i></h2>
+      <p>Mande uma mensagem pelo WhatsApp com um resumo da sua situação. O retorno é feito pela equipe do escritório.</p>
+      <a class="btn" data-wa="Olá! Vim pelo site e gostaria de explicar meu caso." href="#">Conversar no WhatsApp</a>
+    </div>
+    <div class="cl">
+      <a class="ci rv" id="mapA" href="#" target="_blank" rel="noopener"><span class="e"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><small>Endereço</small><b>R. Nicolau Laraia, 159 — Santa Lúcia</b><br><span style="color:var(--mut);font-size:14px">Pouso Alegre/MG · abrir no mapa</span></div></a>
+      <a class="ci rv" data-wa="Olá! Vim pelo site." href="#"><span class="e"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span><div><small>WhatsApp</small><b>(35) 99872-2287</b></div></a>
+      <div class="ci rv"><span class="e"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><small>Atendimento</small><b>Segunda a sexta, até 18h</b></div></div>
+      <a class="ci rv" href="https://www.instagram.com/tpvadvogados/" target="_blank" rel="noopener"><span class="e"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></span><div><small>Instagram</small><b>@tpvadvogados</b></div></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap ft">
+    <div><b>Teixeira de Paula & Vilela Advogados</b><br>OAB/MG <span id="oab"></span> · R. Nicolau Laraia, 159 — Pouso Alegre/MG</div>
+    <div>Conteúdo informativo, sem promessa de resultado.<br>Prévia desenvolvida por <b>@dev.mgabrielsr</b></div>
+  </div>
+</footer>
+
+<a id="wa" data-wa="Olá! Vim pelo site e gostaria de falar com o escritório." href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.6 14.1c-.2.7-1.4 1.3-2 1.4-.5.1-1.2.1-1.9-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3s.8-2.2 1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.4Z"/></svg></a>
+
+<script>
+/* ===== CONFIG: confirme estes dados com o escritório ===== */
+const CONFIG={
+  whatsapp:"5535998722287",
+  oab:"136.100",               // número encontrado em diretório (confirmar a qual sócio pertence)
+  maps:"https://www.google.com/maps/search/?api=1&query=Teixeira+de+Paula+%26+Vilela+Advogados+Pouso+Alegre",
+};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const wa=t=>`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(t)}`;
+$$("[data-wa]").forEach(a=>{a.href=wa(a.dataset.wa);a.target="_blank";a.rel="noopener"});
+$("#oab").textContent=CONFIG.oab;$("#mapA").href=CONFIG.maps;$("#gLink").href=CONFIG.maps;
+document.getElementById("mqd").parentNode.append(document.getElementById("mqd").cloneNode(true));
+
+/* ===== tema ===== */
+const root=document.documentElement;
+const isDark=()=>root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;
+$("#tgl").onclick=()=>{root.dataset.theme=isDark()?"light":"dark";try{localStorage.setItem("tpv-t",root.dataset.theme)}catch(e){}};
+try{const t=localStorage.getItem("tpv-t");if(t)root.dataset.theme=t}catch(e){}
+const css=v=>getComputedStyle(root).getPropertyValue(v).trim();
+
+/* ===== nav: progresso + indicador ===== */
+const nav=$("#nav"),ink=$("#ink"),links=$$("#links a");
+function moveInk(a){if(!a){ink.style.opacity=0;return}ink.style.opacity=1;ink.style.left=a.offsetLeft+"px";ink.style.width=a.offsetWidth+"px"}
+addEventListener("scroll",()=>{
+  const h=document.documentElement.scrollHeight-innerHeight;$("#prog").style.transform=`scaleX(${scrollY/h})`;
+  nav.classList.toggle("sc",scrollY>40);
+  let cur=null;links.forEach(a=>{const s=$(a.getAttribute("href"));if(s&&s.getBoundingClientRect().top<innerHeight*.4)cur=a});
+  links.forEach(a=>a.classList.toggle("on",a===cur));moveInk(cur);
+  proc();
+},{passive:true});
+
+/* ===== reveal ===== */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});
+$$(".rv").forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+"ms";io.observe(el)});
+
+/* ===== tilt 3D ===== */
+$$(".tilt").forEach(c=>{
+  c.addEventListener("pointermove",e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+    c.style.transform=`rotateY(${(x-.5)*14}deg) rotateX(${(.5-y)*12}deg)`;c.style.setProperty("--mx",x*100+"%");c.style.setProperty("--my",y*100+"%")});
+  c.addEventListener("pointerleave",()=>{c.style.transform=""});
+});
+
+/* ===== FAQ ===== */
+$$(".fi button").forEach(b=>b.onclick=()=>b.parentNode.classList.toggle("o"));
+
+/* ===== anéis 3D (logo) ===== */
+function ringsScene(cv,opt={}){
+  const ctx=cv.getContext("2d");let W,H,dpr;
+  const P=[];const N=opt.n||260,T=opt.t||9;
+  const centers=[[0,.52],[-.45,-.26],[.45,-.26]];
+  centers.forEach(([cx,cy],k)=>{
+    const tilt=[0.5,-0.5,0.5][k],ax=k*2.094;
+    for(let i=0;i<N;i++)for(let j=0;j<T;j++){
+      const u=i/N*Math.PI*2,v=j/T*Math.PI*2,R=.62,r=.075;
+      let x=(R+r*Math.cos(v))*Math.cos(u),y=(R+r*Math.cos(v))*Math.sin(u),z=r*Math.sin(v);
+      // inclinação para entrelaçar
+      const ca=Math.cos(ax),sa=Math.sin(ax);let lx=x*ca+y*sa,ly=-x*sa+y*ca;
+      const ct=Math.cos(tilt),st=Math.sin(tilt);let lz=z*ct-lx*st;lx=lx*ct+z*st;
+      x=lx*ca-ly*sa;y=lx*sa+ly*ca;z=lz;
+      P.push([x+cx*.62,y+cy*.62,z,k,Math.random()]);
+    }
+  });
+  let mx=0,my=0,tx=0,ty=0,vis=true;
+  function rs(){dpr=Math.min(devicePixelRatio||1,2);W=cv.clientWidth;H=cv.clientHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0)}
+  rs();addEventListener("resize",rs);
+  if(!opt.still)addEventListener("pointermove",e=>{tx=(e.clientX/innerWidth-.5);ty=(e.clientY/innerHeight-.5)});
+  new IntersectionObserver(es=>vis=es[0].isIntersecting).observe(cv);
+  const t0=performance.now();
+  function draw(now){requestAnimationFrame(draw);if(!vis)return;
+    const t=(now-t0)/1000;mx+=(tx-mx)*.05;my+=(ty-my)*.05;
+    ctx.clearRect(0,0,W,H);
+    const ay=t*.25+mx*.9,ax=-.35+Math.sin(t*.3)*.15+my*.6,az=t*.05;
+    const cy=Math.cos(ay),sy=Math.sin(ay),cx=Math.cos(ax),sx=Math.sin(ax),cz=Math.cos(az),sz=Math.sin(az);
+    const S=Math.min(W,H)*.42,ox=W/2,oy=H/2;
+    const wine=css("--wine"),rose=css("--rose"),gold=css("--gold");const cols=[wine,rose,gold];
+    const intro=Math.min(1,t/2.2),ei=1-Math.pow(1-intro,3);
+    const pts=[];
+    for(const p of P){
+      let x=p[0],y=p[1],z=p[2];
+      // explosão inicial → forma
+      const d=(1-ei)*(1.5+p[4]*2);x*=1+d;y*=1+d;z+=d*(p[4]-.5)*2;
+      let X=x*cz-y*sz,Y=x*sz+y*cz;
+      let X2=X*cy+z*sy,Z=-X*sy+z*cy;
+      let Y2=Y*cx-Z*sx,Z2=Y*sx+Z*cx;
+      const f=3/(3+Z2);pts.push([ox+X2*S*f,oy-Y2*S*f,Z2,p[3],p[4]]);
+    }
+    pts.sort((a,b)=>b[2]-a[2]);
+    for(const q of pts){const a=Math.max(.08,Math.min(1,.65-q[2]*.6))*ei+(1-ei)*.3;
+      ctx.globalAlpha=a*(.55+.45*Math.sin(t*2+q[4]*20));ctx.fillStyle=cols[q[3]];
+      const s=(1.3-q[2]*.6)*(opt.ps||1.5);ctx.fillRect(q[0],q[1],s,s)}
+    ctx.globalAlpha=1;
+  }
+  requestAnimationFrame(draw);
+}
+ringsScene($("#rings"));
+ringsScene($("#mini"),{n:140,t:5,ps:1.2,still:true});
+
+/* ===== Diagnóstico ===== */
+const IC={
+  ap:'<path d="M12 3a4 4 0 1 1 0 8 4 4 0 0 1 0-8ZM5 21v-2a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v2"/>',
+  ng:'<circle cx="12" cy="12" r="9"/><path d="m15 9-6 6M9 9l6 6"/>',
+  dc:'<path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z"/>',
+  dm:'<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/>',
+  cv:'<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6"/>'
+};
+const FL={
+ ap:{t:"Quero me aposentar",qs:[
+   ["Quanto tempo de contribuição você tem?",["Menos de 15 anos","Entre 15 e 25 anos","Entre 25 e 35 anos","Mais de 35 anos"]],
+   ["Já trabalhou em atividade insalubre, rural ou como professor(a)?",["Sim","Não","Não sei"]]]},
+ ng:{t:"O INSS negou ou cortou meu benefício",qs:[
+   ["Quando você recebeu a resposta do INSS?",["Há menos de 30 dias","Entre 1 e 6 meses","Há mais de 6 meses"]],
+   ["Qual era o benefício?",["Aposentadoria","Auxílio por incapacidade","BPC/LOAS","Pensão por morte","Outro"]]]},
+ dc:{t:"Doença ou acidente me impede de trabalhar",qs:[
+   ["Você contribui ou contribuía para o INSS?",["Sim, com carteira assinada","Sim, por conta própria/MEI","Não contribuo"]],
+   ["Você já tem laudo ou atestado médico?",["Sim","Ainda não"]]]},
+ dm:{t:"Fui demitido(a) ou saí do emprego",qs:[
+   ["Como foi a saída?",["Sem justa causa","Por justa causa","Pedi demissão","Acordo com a empresa","Ainda trabalho lá"]],
+   ["Quando o contrato terminou?",["Há menos de 2 anos","Há mais de 2 anos","Ainda não terminou"]]]},
+ cv:{t:"Problema com contrato, compra ou dívida",qs:[
+   ["Do que se trata?",["Compra ou serviço com problema","Cobrança ou dívida","Contrato descumprido","Pedido de indenização"]],
+   ["Você tem documentos (contrato, notas, prints)?",["Sim, tenho tudo","Tenho parte","Não tenho"]]]}
+};
+function result(k,a){
+  const R={title:"",tag:"",urg:false,pts:[],docs:[]};
+  if(k==="ap"){
+    R.title=a[0]==="Menos de 15 anos"?"Vale planejar antes de pedir":"Hora de conferir suas regras de aposentadoria";
+    R.tag=a[1]==="Sim"?"Tempo especial pode antecipar":"Planejamento previdenciário";
+    R.pts=["Qual regra de transição da Reforma se aplica a você","Se há períodos faltando ou errados no CNIS",a[1]!=="Não"?"Se o tempo insalubre, rural ou de magistério pode ser contado de forma diferenciada":"Qual regra resulta no melhor valor de benefício"];
+    R.docs=["Extrato do CNIS (app Meu INSS)","Carteiras de trabalho","Carnês ou guias de contribuição"].concat(a[1]!=="Não"?["PPP/laudos ou documentos rurais"]:[]);
+  }else if(k==="ng"){
+    R.urg=a[0]==="Há menos de 30 dias";
+    R.title=R.urg?"Atenção: o prazo de recurso pode estar correndo":"Ainda pode haver caminho pela via judicial";
+    R.tag=R.urg?"Prazo de 30 dias para recurso":"Análise do indeferimento";
+    R.pts=["O motivo exato da negativa na carta do INSS","Se cabe recurso administrativo ou ação judicial",a[1]==="BPC/LOAS"?"Como a renda e a composição familiar foram calculadas":a[1]==="Auxílio por incapacidade"?"Se os laudos médicos comprovam a incapacidade":"Se todos os períodos de contribuição foram considerados"];
+    R.docs=["Carta de indeferimento ou cessação","Número do protocolo no Meu INSS","Documentos usados no pedido"].concat(a[1]==="Auxílio por incapacidade"?["Laudos e exames recentes"]:[]);
+  }else if(k==="dc"){
+    R.title=a[0]==="Não contribuo"?"O BPC/LOAS pode ser o caminho a avaliar":"Você pode ter direito a benefício por incapacidade";
+    R.tag=a[1]==="Sim"?"Laudo em mãos ajuda muito":"Providencie um laudo médico";
+    R.pts=a[0]==="Não contribuo"?["Se a renda familiar se enquadra no critério do BPC","Se a condição de saúde caracteriza deficiência de longo prazo","Inscrição e atualização do CadÚnico"]:["Se você mantém a qualidade de segurado","Se cumpre a carência (em regra, 12 contribuições)","Se a doença ou acidente tem relação com o trabalho"];
+    R.docs=["Laudos, exames e atestados","Documento com foto e CPF",a[0]==="Não contribuo"?"Comprovante do CadÚnico":"Extrato do CNIS"];
+  }else if(k==="dm"){
+    R.urg=a[1]==="Há menos de 2 anos";
+    R.title=a[1]==="Há mais de 2 anos"?"O prazo para ação pode ter passado — vale confirmar":"Vale conferir sua rescisão com cuidado";
+    R.tag=a[1]==="Há menos de 2 anos"?"Prazo de 2 anos após a saída":"Conferência de direitos";
+    R.pts=["Se as verbas rescisórias foram pagas corretamente",a[0]==="Por justa causa"?"Se a justa causa foi aplicada de forma válida":"Horas extras, adicionais e FGTS depositado","Se houve período trabalhado sem carteira assinada"];
+    R.docs=["Termo de rescisão (TRCT)","Holerites e carteira de trabalho","Extrato do FGTS","Mensagens ou registros de ponto"];
+  }else{
+    R.title="Seu caso pode ser resolvido com negociação ou ação";
+    R.tag=a[1]==="Sim, tenho tudo"?"Documentação completa":"Organize as provas";
+    R.pts=["O que o contrato ou a lei garante na sua situação","Se cabe acordo antes de ir à Justiça","Se existem danos materiais ou morais a avaliar"];
+    R.docs=["Contrato, notas fiscais ou boletos","Prints de conversas e protocolos","Comprovantes de pagamento"];
+  }
+  return R;
+}
+const box=$("#dbox");let dk=null,da=[];
+function ring(p){const c=2*Math.PI*22;return `<div class="ring"><svg width="52" height="52"><circle cx="26" cy="26" r="22" fill="none" stroke="var(--line)" stroke-width="4"/><circle cx="26" cy="26" r="22" fill="none" stroke="var(--wine)" stroke-width="4" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${c*(1-p)}" style="transition:stroke-dashoffset .6s"/></svg><span>${Math.round(p*100)}%</span></div>`}
+function dRender(){
+  let h="";
+  if(!dk){
+    h=`<div class="stp"><div class="dtop"><div class="k">Passo 1 de 3</div>${ring(0)}</div><div class="dq">O que está acontecendo?</div><div class="opts">`+
+      Object.entries(FL).map(([k,f])=>`<button class="op" data-k="${k}"><span class="e"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">${IC[k]}</svg></span>${f.t}</button>`).join("")+`</div></div>`;
+  }else if(da.length<2){
+    const [q,o]=FL[dk].qs[da.length];
+    h=`<div class="stp"><div class="dtop"><div class="k">Passo ${da.length+2} de 3</div>${ring((da.length+1)/3)}</div><div class="dq">${q}</div><div class="opts">`+
+      o.map(x=>`<button class="op" data-a="${x}"><span class="e"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>${x}</button>`).join("")+`</div><button class="back" id="bk">← Voltar</button></div>`;
+  }else{
+    const r=result(dk,da);
+    const msg=`Olá! Fiz o diagnóstico no site.\n• Situação: ${FL[dk].t}\n• ${FL[dk].qs[0][0]} ${da[0]}\n• ${FL[dk].qs[1][0]} ${da[1]}\nGostaria de uma análise do meu caso.`;
+    h=`<div class="stp res"><div class="dtop"><span class="tag ${r.urg?"u":""}">${r.urg?"⚠ ":""}${r.tag}</span>${ring(1)}</div>
+      <h4>${r.title}</h4><p>Resumo para: <b>${FL[dk].t.toLowerCase()}</b>.</p>
+      <div class="cols"><div><h5>O que costuma ser analisado</h5><ul>${r.pts.map(x=>`<li>${x}</li>`).join("")}</ul></div><div><h5>Separe estes documentos</h5><ul>${r.docs.map(x=>`<li>${x}</li>`).join("")}</ul></div></div>
+      <a class="btn p" href="${wa(msg)}" target="_blank" rel="noopener">Enviar resumo pelo WhatsApp</a>
+      <div><button class="back" id="rs">↺ Refazer diagnóstico</button></div>
+      <p class="fine">Orientação geral e informativa. Cada caso depende da análise dos documentos — não há promessa de resultado.</p></div>`;
+  }
+  box.innerHTML=h;
+  box.querySelectorAll("[data-k]").forEach(b=>b.onclick=()=>{dk=b.dataset.k;da=[];dRender()});
+  box.querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>{da.push(b.dataset.a);dRender()});
+  const bk=box.querySelector("#bk");if(bk)bk.onclick=()=>{if(da.length)da.pop();else dk=null;dRender()};
+  const rs=box.querySelector("#rs");if(rs)rs.onclick=()=>{dk=null;da=[];dRender()};
+}
+dRender();
+
+/* ===== Simulador ===== */
+const sim={sx:"F",ag:54,ct:26,bf:1};
+function segs(id,key){$$(`#${id} button`).forEach(b=>b.onclick=()=>{sim[key]=b.dataset.v==="F"||b.dataset.v==="M"?b.dataset.v:+b.dataset.v;$$(`#${id} button`).forEach(o=>o.setAttribute("aria-pressed",o===b));simRender()})}
+segs("sx","sx");segs("bf","bf");
+["ag","ct"].forEach(id=>{const el=$("#"+id);el.oninput=()=>{sim[id]=+el.value;simRender()}});
+const Y0=2026;
+function rules(){
+  const F=sim.sx==="F",L=[];
+  L.push({n:"Por idade",d:F?"62 anos + 15 de contribuição":`65 anos + ${sim.bf?15:20} de contribuição`,
+    ok:(a,c,y)=>a>=(F?62:65)&&c>=(F?15:(sim.bf?15:20)),pr:(a,c)=>Math.min(a/(F?62:65),c/(F?15:(sim.bf?15:20))),on:true});
+  L.push({n:"Transição por pontos",d:F?"idade + contribuição (93 pts em 2026) e 30 anos":"idade + contribuição (103 pts em 2026) e 35 anos",
+    ok:(a,c,y)=>a+c>=(F?Math.min(86+(y-2019),100):Math.min(96+(y-2019),105))&&c>=(F?30:35),pr:(a,c)=>Math.min((a+c)/(F?93:103),c/(F?30:35)),on:!!sim.bf});
+  L.push({n:"Idade mínima progressiva",d:F?"59,5 anos em 2026 (sobe 6 meses/ano) e 30 anos":"64,5 anos em 2026 (sobe 6 meses/ano) e 35 anos",
+    ok:(a,c,y)=>a>=(F?Math.min(56+.5*(y-2019),62):Math.min(61+.5*(y-2019),65))&&c>=(F?30:35),pr:(a,c)=>Math.min(a/(F?59.5:64.5),c/(F?30:35)),on:!!sim.bf});
+  return L;
+}
+function simRender(){
+  $("#agO").textContent=sim.ag+" anos";$("#ctO").textContent=sim.ct+" anos";
+  ["ag","ct"].forEach(id=>{const e=$("#"+id);e.style.setProperty("--p",(e.value-e.min)/(e.max-e.min)*100+"%")});
+  if(sim.ct>sim.ag-14){sim.ct=Math.max(0,sim.ag-14);$("#ct").value=sim.ct;$("#ctO").textContent=sim.ct+" anos"}
+  const out=$("#out");const L=rules();let best=null;
+  out.innerHTML=L.map((r,i)=>{
+    if(!r.on)return `<div class="rule off"><div class="rh"><div><b>${r.n}</b><small>Só para quem já contribuía antes da Reforma</small></div><div class="when">—</div></div></div>`;
+    let yr=null;for(let k=0;k<=45;k++){if(r.ok(sim.ag+k,sim.ct+k,Y0+k)){yr=k;break}}
+    if(yr!==null&&(best===null||yr<best.k))best={k:yr,n:r.n};
+    const p=Math.max(.03,Math.min(1,r.pr(sim.ag,sim.ct)));
+    const when=yr===0?`Já cumpre<small>pelos dados informados</small>`:yr===null?`—<small>fora do horizonte</small>`:`${Y0+yr}<small>aos ${sim.ag+yr} anos</small>`;
+    return `<div class="rule ${yr===0?"ok":""}" style="transform:rotateX(${yr===0?0:4}deg)"><div class="rh"><div><b>${r.n}</b><small>${r.d}</small></div><div class="when">${when}</div></div><div class="bar"><i style="width:${p*100}%"></i></div></div>`;
+  }).join("")+
+  `<div class="rule" style="background:var(--wine);color:var(--on);border-color:transparent"><div class="rh"><div><b>${best===null?"Nenhuma regra no horizonte simulado":best.k===0?"Você pode já ter direito":"Caminho mais curto estimado"}</b><small style="color:inherit;opacity:.8">${best===null?"Converse com o escritório sobre outras possibilidades":best.n}</small></div><div class="when" style="color:#F2D29B">${best===null?"":best.k===0?"Hoje":Y0+best.k}</div></div></div>`;
+  $("#simWa").href=wa(`Olá! Usei o simulador do site (${sim.sx==="F"?"mulher":"homem"}, ${sim.ag} anos, ${sim.ct} anos de contribuição${sim.bf?", contribuía antes de 2019":""}). Gostaria de uma análise do meu CNIS.`);
+}
+simRender();
+
+/* ===== Processo: pilha 3D no scroll ===== */
+const pcs=$$(".pc"),dots=$$("#dots i"),procS=$("#proc");
+function proc(){
+  if(innerWidth<=900)return;
+  const r=procS.getBoundingClientRect(),tot=r.height-innerHeight,p=Math.max(0,Math.min(1,-r.top/tot))*(pcs.length-1);
+  pcs.forEach((c,i)=>{const d=i-p;
+    if(d>=0){const k=Math.min(1,d);c.style.transform=`translateY(${k*110}%) rotateX(${-k*28}deg)`;c.style.opacity=d>1?0:1;c.style.zIndex=10+i}
+    else{const k=Math.min(3,-d);c.style.transform=`translateY(${-k*26}px) scale(${1-k*.06}) rotateX(${k*6}deg)`;c.style.opacity=k<1?1:Math.max(0,2-k);c.style.filter=`brightness(${1-Math.min(1,k)*.08})`;c.style.zIndex=10+i}
+  });
+  dots.forEach((d,i)=>d.classList.toggle("on",i===Math.round(p)));
+}
+proc();addEventListener("resize",proc);
+</script>
+</body>
+</html>
+
+</body></html>
